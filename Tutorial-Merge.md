@@ -1,43 +1,75 @@
-# Realize um commit na sua branch se estiver pendente
 
-## Atualizando a branch hipotetica chamda thiago
-### Primeiro passo troque para a branch principal
+# Atualizando sua branch e realizando merges
+
+## 1. Verifique e realize um commit na sua branch, se houver pendências.
+
+### 2. Atualizando a branch hipotética chamada `thiago`
+
+#### Passo 1: Troque para a branch principal
+```bash
 git checkout main
+```
 
-### Baixe a nova versão da branch principal
+#### Passo 2: Baixe a nova versão da branch principal
+```bash
 git pull origin main
+```
 
-### Acesse a branch a sera mesclada com a main (branch hipotetica chamada Thiago)
+#### Passo 3: Acesse a branch que será mesclada com a `main` (neste exemplo, `thiago`)
+```bash
 git checkout thiago
+```
 
-### Realize o merge (esse perge pega atualizações da main na sua branch)
+#### Passo 4: Realize o merge (Esse merge traz as atualizações da `main` para sua branch)
+```bash
 git merge main
+```
 
-### Adicione arquivos pendentes
+#### Passo 5: Adicione arquivos pendentes
+```bash
 git add .
+```
 
-### Faça commit com as mudanças
+#### Passo 6: Faça commit das mudanças
+```bash
 git commit -m "mensagem descrevendo o merge"
+```
 
-### Subindo atualizações para repositório remoto
+#### Passo 7: Suba as atualizações para o repositório remoto
+```bash
 git push origin thiago
+```
 
-## Atualizando a main
+---
 
-### Acessando a main
+## 3. Atualizando a `main`
+
+#### Passo 1: Troque para a `main`
+```bash
 git checkout main
+```
 
-### Atualizando main (Se sua branch main já estiver atualizada não terá atualizações)
+#### Passo 2: Atualize a `main` (Se a sua branch `main` já estiver atualizada, não haverá atualizações)
+```bash
 git pull origin main
+```
 
-### Merge com a branch hipotetica chamada thiago
+#### Passo 3: Faça o merge da branch hipotética (`thiago`)
+```bash
 git merge thiago
+```
 
-### Adicione arquivos pendentes (se houverem)
+#### Passo 4: Adicione arquivos pendentes (se houverem)
+```bash
 git add .
+```
 
-### Faça commit com as mudanças (se necessário)
+#### Passo 5: Faça commit das mudanças (se necessário)
+```bash
 git commit -m "mensagem descrevendo o merge"
+```
 
-### Subindo atualizações para repositório remoto
+#### Passo 6: Suba as atualizações para o repositório remoto
+```bash
 git push origin main
+```
