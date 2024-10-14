@@ -20,7 +20,7 @@ git add .
 git commit -m "mensagem descrevendo o merge"
 
 ### Subindo atualizações para repositório remoto
-git push origin main
+git push origin thiago
 
 ## Atualizando a main
 
@@ -39,4 +39,5 @@ git add .
 ### Faça commit com as mudanças (se necessário)
 git commit -m "mensagem descrevendo o merge"
 
-
+### Subindo atualizações para repositório remoto
+git push origin main
