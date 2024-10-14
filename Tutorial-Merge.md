@@ -19,6 +19,9 @@ git add .
 ### Faça commit com as mudanças
 git commit -m "mensagem descrevendo o merge"
 
+### Subindo atualizações para repositório remoto
+git push origin main
+
 ## Atualizando a main
 
 ### Acessando a main
